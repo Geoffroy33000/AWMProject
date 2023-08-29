@@ -1,0 +1,28 @@
+.NavbarContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.NavbarLogoContainer,
+.NavbarLinksContainer {
+  display: flex;
+  align-items: center;
+  margin: 24px;
+}
+
+.NavbarLinksContainer {
+  width: 85%;
+  justify-content: space-between;
+}
+
+a {
+  font-size: 40px;
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+a:visited {
+  color: antiquewhite;
+}

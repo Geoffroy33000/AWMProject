@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import { Simulator } from "./Modules";
 import { Navbar } from "./Components";
 
@@ -7,7 +9,12 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Simulator />
+      <Routes>
+        {/*<Route path="/" element={"toto"} />*/}
+        <Route path={"/creermontre"} element={<Simulator />} />
+        {/*<Route path="/realisations" element={"toto"} />
+          <Route path="/contact" element={"toto"} />*/}
+      </Routes>
     </div>
   );
 }

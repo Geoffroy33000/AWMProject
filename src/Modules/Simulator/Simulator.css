@@ -1,0 +1,29 @@
+.simulatorContainer {
+  display: flex;
+}
+
+.simulatorPreviewContainer {
+  width: 80%;
+}
+
+.simulatorSelectorContainer {
+  display: block;
+  position: relative;
+}
+
+.simulatorPreview {
+  position: absolute;
+}
+
+.boitierPreview {
+  z-index: 2;
+}
+
+.braceletPreview,
+.couronnePreview {
+  z-index: 3;
+}
+
+.aiguillePreview {
+  z-index: 3;
+}
