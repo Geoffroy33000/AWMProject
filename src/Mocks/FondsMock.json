@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "nom_image": "Fond.png",
+        "nom_fond": "Fond cuivre"
+    },
+    {
+        "id":2,
+        "nom_image": "Fond01.png",
+        "nom_fond": "Fond transparent"
+    },
+    {
+        "id":3,
+        "nom_image": "Fond03.png",
+        "nom_fond": "Fond argent"
+    },
+    {
+        "id":4,
+        "nom_image": "Fond04.png",
+        "nom_fond": "Fond cuivre et or"
+    },
+    {
+        "id":5,
+        "nom_image": "Fond05.png",
+        "nom_fond": "Fond bleu métal"
+    }
+]

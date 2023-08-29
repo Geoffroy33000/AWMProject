@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "nom_image": "Bracelet01.png",
+        "nom_bracelet": "Bracelet fine maille argent"
+    },
+    {
+        "id":2,
+        "nom_image": "Bracelet02.png",
+        "nom_bracelet": "Bracelet grosse maille argent"
+    },
+    {
+        "id":3,
+        "nom_image": "Bracelet03.png",
+        "nom_bracelet": "Bracelet grosse maille argent 2"
+    },
+    {
+        "id":4,
+        "nom_image": "Bracelet04.png",
+        "nom_bracelet": "Bracelet grosse maille cuivre"
+    },
+    {
+        "id":5,
+        "nom_image": "Bracelet05.png",
+        "nom_bracelet": "Bracelet fine maille argent 2"
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "nom_image": "MontreAcier01Det.png",
+        "nom_boitier": "Boitier argent"
+    },
+    {
+        "id":2,
+        "nom_image": "MontreAcier02Det.png",
+        "nom_boitier": "Boitier cuivre"
+    },
+    {
+        "id":3,
+        "nom_image": "MontreAcier03Det.png",
+        "nom_boitier": "Boitier argent 2"
+    },
+    {
+        "id":4,
+        "nom_image": "MontreAcier04Det.png",
+        "nom_boitier": "Boitier cuivre 2"
+    },
+    {
+        "id":5,
+        "nom_image": "MontreAcier05Det.png",
+        "nom_boitier": "Boitier argent 3"
+    }
+]
