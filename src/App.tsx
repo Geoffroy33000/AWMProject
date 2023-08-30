@@ -1,6 +1,6 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
-import { Simulator } from "./Modules";
+import { Simulator, HomePage, Realisations, Contact } from "./Modules";
 import { Navbar } from "./Components";
 
 import "./App.css";
@@ -10,10 +10,10 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        {/*<Route path="/" element={"toto"} />*/}
-        <Route path={"/creermontre"} element={<Simulator />} />
-        {/*<Route path="/realisations" element={"toto"} />
-          <Route path="/contact" element={"toto"} />*/}
+        <Route path="/" element={<HomePage />} />
+        <Route path="/creermontre" element={<Simulator />} />
+        <Route path="/realisations" element={<Realisations />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );

@@ -1,0 +1,17 @@
+.Home_Container {
+  padding: 34px;
+}
+
+.Home_img_container {
+  margin: 0 auto;
+  width: 350px;
+}
+
+.Home_img_container img {
+  width: 350px;
+}
+
+p {
+  font-size: 34px;
+  margin: 34px 0;
+}

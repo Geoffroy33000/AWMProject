@@ -1,3 +1,10 @@
+import { useContext } from "react";
+
+import {
+  SimulatorContext,
+  SimulatorType,
+} from "../../Context/SimulatorContext";
+
 import { Selector } from "../../Components";
 
 import {
@@ -11,47 +18,29 @@ import {
 import "./Simulator.css";
 
 function Simulator() {
+  const { boitier, fond, couronne, bracelet, aiguille } =
+    useContext<SimulatorType>(SimulatorContext);
+
   function renderAiguilles() {
-    return (
-      <img
-        src={`/img/${AiguillesMock[0].nom_image}`}
-        alt={AiguillesMock[0].nom_aiguille}
-      />
-    );
+    return <img src={`/img/${aiguille}`} alt={aiguille} />;
   }
 
   function renderBoitiers() {
-    return (
-      <img
-        src={`/img/${BoitiersMock[0].nom_image}`}
-        alt={BoitiersMock[0].nom_boitier}
-      />
-    );
+    return <img src={`/img/${boitier}`} alt={boitier} />;
   }
 
   function renderBracelets() {
-    return (
-      <img
-        src={`/img/${BraceletsMock[3].nom_image}`}
-        alt={BraceletsMock[0].nom_bracelet}
-      />
-    );
+    return <img src={`/img/${bracelet}`} alt={bracelet} />;
   }
 
   function renderCouronne() {
-    return (
-      <img
-        src={`/img/${CouronneMock[1].nom_image}`}
-        alt={CouronneMock[0].nom_couronne}
-      />
-    );
+    return <img src={`/img/${couronne}`} alt={couronne} />;
   }
 
   function renderFonds() {
-    return (
-      <img src={`/img/${FondsMock[0].nom_image}`} alt={FondsMock[0].nom_fond} />
-    );
+    return <img src={`/img/${fond}`} alt={fond} />;
   }
+  console.log(SimulatorContext);
   return (
     <div className="simulatorContainer">
       <div className="simulatorPreviewContainer">

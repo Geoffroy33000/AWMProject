@@ -1,0 +1,71 @@
+.Home_Container {
+  padding: 34px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .Home_Container {
+  padding-top: 200px;
+}
+
+.Contact_Title {
+  text-align: center;
+  width: 100%;
+  font-size: 34px;
+}
+
+.Contact_Comments,
+.Contact_Submit_Container,
+.Contact_Row1,
+.Contact_Row2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Contact_Submit {
+  margin-top: 46px;
+  font-size: 24px;
+  height: 50px;
+  width: 150px;
+  background-color: lightgray;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Contact_Row1,
+.Contact_Row2 {
+  margin-top: 34px;
+}
+
+.Prenom_Contact,
+.Numéro_Contact {
+  margin-left: 50px;
+}
+
+.Prenom_Contact input,
+.Numéro_Contact input,
+.Nom_Contact input,
+.Mail_Contact input {
+  margin-left: 24px;
+  border-radius: 8px;
+  height: 24px;
+  width: 250px;
+}
+
+.Prenom_Contact label,
+.Numéro_Contact label,
+.Nom_Contact label,
+.Mail_Contact label {
+  font-size: 24px;
+}
+
+.Contact_Comments {
+  margin-top: 46px;
+}
