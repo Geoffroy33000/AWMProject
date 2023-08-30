@@ -3,12 +3,17 @@
 }
 
 .simulatorPreviewContainer {
-  width: 80%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .simulatorSelectorContainer {
+  width: 50%;
+  height: 85vh;
   display: block;
-  position: relative;
+  justify-content: center;
 }
 
 .simulatorPreview {
@@ -26,4 +31,10 @@
 
 .aiguillePreview {
   z-index: 3;
+}
+
+.simulatorPreviewContainer,
+.simulatorPreview,
+.simulatorPreview img {
+  height: 85vh;
 }

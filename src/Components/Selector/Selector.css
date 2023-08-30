@@ -1,0 +1,17 @@
+.SelectorContainer {
+  height: 17vh;
+}
+
+.SelectorNameContainer {
+  font-size: 28px;
+}
+
+.SelectorTypeContentContainer {
+  display: flex;
+  margin: 8px 64px;
+  justify-content: space-between;
+}
+
+.SelectorTypeImg img {
+  height: 8vh;
+}
