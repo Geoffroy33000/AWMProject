@@ -29,8 +29,12 @@
   z-index: 3;
 }
 
-.aiguillePreview {
+.fondPreview {
   z-index: 3;
+}
+
+.aiguillePreview {
+  z-index: 4;
 }
 
 .simulatorPreviewContainer,

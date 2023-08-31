@@ -17,25 +17,24 @@ interface Props {
 }
 
 function Selector(props: Props) {
-  const [boitier2, setBoitier] = useState<string>(initialState.boitier);
+  const [boitier, setBoitier] = useState<string>(initialState.boitier);
   const [fond, setFond] = useState<string>(initialState.fond);
   const [couronne, setCouronne] = useState<string>(initialState.couronne);
   const [bracelet, setBracelet] = useState<string>(initialState.bracelet);
   const [aiguille, setAiguille] = useState<string>(initialState.aiguille);
 
-  const boitier = useMemo(() => {
-    return boitier2;
-  }, [boitier2]);
-
   function renderSelector() {
     switch (props.type) {
       case "boitier":
         return BoitiersMock.map((boitier) => (
-          <div className="SelectorTypeContent">
-            <div
-              className="SelectorTypeImg"
-              onClick={() => setBoitier(boitier.nom_image)}
-            >
+          <div
+            className="SelectorTypeContent"
+            onClick={() => {
+              setBoitier(boitier.nom_image);
+            }}
+            key={boitier.id}
+          >
+            <div className="SelectorTypeImg">
               <img
                 src={`/img/${boitier.nom_image}`}
                 alt={boitier.nom_boitier}
@@ -51,6 +50,7 @@ function Selector(props: Props) {
             <div
               className="SelectorTypeImg"
               onClick={() => setFond(fond.nom_image)}
+              key={fond.id}
             >
               <img src={`/img/${fond.nom_image}`} alt={fond.nom_fond} />
             </div>
@@ -64,6 +64,7 @@ function Selector(props: Props) {
             <div
               className="SelectorTypeImg"
               onClick={() => setCouronne(couronne.nom_image)}
+              key={couronne.id}
             >
               <img
                 src={`/img/${couronne.nom_image}`}
@@ -80,6 +81,7 @@ function Selector(props: Props) {
             <div
               className="SelectorTypeImg"
               onClick={() => setBracelet(bracelet.nom_image)}
+              key={bracelet.id}
             >
               <img
                 src={`/img/${bracelet.nom_image}`}
@@ -96,6 +98,7 @@ function Selector(props: Props) {
             <div
               className="SelectorTypeImg"
               onClick={() => setAiguille(aiguilles.nom_image)}
+              key={aiguilles.id}
             >
               <img
                 src={`/img/${aiguilles.nom_image}`}
